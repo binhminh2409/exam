@@ -1,10 +1,12 @@
 package sun.hr_management.mapper.impl;
 
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 import sun.hr_management.dto.EmployeeDto;
 import sun.hr_management.entity.Employee;
 import sun.hr_management.mapper.EmployeeMapper;
 
+@Component
 public class EmployeeMapperImpl implements EmployeeMapper {
     @Override
     public EmployeeDto entityToDto(Employee entity) {

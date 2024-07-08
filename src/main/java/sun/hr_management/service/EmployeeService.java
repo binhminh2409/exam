@@ -1,5 +1,11 @@
 package sun.hr_management.service;
 
-public interface EmployeeService {
+import sun.hr_management.dto.EmployeeDto;
 
+import java.util.List;
+
+public interface EmployeeService {
+    public List<EmployeeDto> findAllEmployee();
+
+    public EmployeeDto createEmployee(EmployeeDto dto);
 }
